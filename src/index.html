@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Betterware Technical Challenge</title>
     <link
@@ -12,17 +12,99 @@
   </head>
   <body>
     <header>
-    <h1 class="title">Technical Challenge</h1>
-    <p class="instruction">Esta página contiene las respuestas al challenge
-      propuesto por Betterware.
-    </p>
+      <h1 class="title">Technical Challenge</h1>
+      <p class="instruction">
+        Esta página contiene las respuestas al challenge propuesto por
+        Betterware.
+      </p>
     </header>
-    <section class='container'>
-      <h3 class='question'>1.En git como crea una nueva rama para la 
-        función “examen” que se te solicito</h3>
-      <p class='answer'>Para crear una rama desde la terminal se utiliza 
-        el comando "git checkout -b [nombre de tu rama]". <br>
+    <section class="container">
+      <h3 class="question">
+        1.En git como crea una nueva rama para la función “examen” que se te
+        solicito
+      </h3>
+      <p class="answer">
+        Para crear una rama desde la terminal se utiliza el comando "git
+        checkout -b [nombre de tu rama]". <br />
         Con eso pasas a la nueva rama y puedes empezar a trabajar en ella.
+      </p>
+      <h3 class="question">
+        2. En JavaScript escriba una función que convierta una fecha ingresada
+        como: M/D/YYYY a el formato requerido: YYYYMMDD
+      </h3>
+      <p class="answer">function formatDate(userDate) { <br>
+          // format from M/D/YYYY to YYYYMMDD <br>
+            let array = userDate.split("/"); <br>
+            while(array[0].length < 2) { <br>
+                array[0] = "0" + array[0]; <br>
+            } <br>
+            while(array[1].length < 2) { <br>
+                array[1] = "0" + array[1]; <br>
+            } <br>
+            let arrayAnswer = array[2]+ array[0]+ array[1];<br>
+            return arrayAnswer; <br>
+        } <br>
+        console.log(formatDate("9/18/2019"));</p> <br>
+      <h3 class="question">3. Que es un Bundle en Webpack</h3>
+      <p class="answer">
+        Un bundle sirve para agrupar todos los ficheros de JavaScript en uno
+        solo. Así el navegador no necesita hacer varias peticiones HTTP.
+      </p>
+      <img src="../images/Bundle.png" alt="bundle" class="bundle" />
+      <h3 class="question">4. Que es el Virtual DOM</h3>
+      <p class="answer">
+        ¿Cómo funciona un enfoque de virtual DOM? . En este caso el framework o
+        librería que corresponda se encarga de tener una copia de nuestro <br> 
+        árbol DOM simplificado en memoria a la cual se denomina VirtualDOM. Una vez
+        que tenemos una versión virtual del DOM el framework se encarga de <br>
+        estar pendiente de los cambios que generan sobre él. Y esto da la capacidad de
+        ver los cambios entre un estado A y un estado B cuando actualizamos <br> la
+        información. Con esto solo cambiamos una pequeña parte del DOM y el
+        framework o librería nos apoya a actualizar el DOM sin necesidad de
+        redibujar<br> toda la página. Esto ayuda a que el rendimiento del navegador
+        se incremente de forma considerable.
+      </p><br>
+      <h3 class="question">5. Con qué librerías Reactivas has trabajado.</h3>
+      <p class="answer">Estuve leyendo un poco de librerías reactivas he manejado
+        React.Js y Next.js con archivos .jsx y .mdx. Pero la librería reactiva
+        RxJs no he tenido la oportunidad de manejarla pero estoy abierta a
+        utilizar esta tecnología.
+      </p>
+      <h3 class="question">6. A que se refiere la nomenclatura BEM</h3>
+      <p class="answer">La metodología BEM que en términos simples se refiere a:
+      Bloque: entidad independiente dentro de un documento web generalmente 
+      será un componente o módulo, estos pueden ser indentados, es decir 
+      bloques pueden contener bloques.
+      Elemento: hace referencia a un marcado o “elemento” descendente de un 
+      bloque, estos no puede utilizarse por sí solos sin el contexto de un 
+      bloque específico.
+      Modificador: hace referencia al estado o versión diferente de un bloque 
+      o un elemento, cabe decir que este estado puede ser opcional.</p>
+      <p class="answer">Para este punto indirectamente utilizaba algo 
+        parecido esta nomenclatura al momento de crear mis clases, en 
+        algunos de mis últimos proyectos.
+      </p>
+      <img class="bundle" src="../images/site-marked.png" alt="BEM"/>
+      <h3 class="question">
+        7. En caso de no venir en tu CV, pasanos una lista con los 3 trabajos
+        web de los que te sientas Orgulloso
+      </h3>
+      <p class="answer">Mis proyectos que más me agradan y de los cuales me
+        siento orgullosa llevan un poco de mí, y también un poco de mis
+        compañeros de trabajo.
+        Los 3 que más me han gustado son:
+        <ul>
+          <li>
+              <a href="https://tita-navarro.github.io/GDL002-data-lovers/src/index.html" 
+              class="project">Pokemón Go Notes</a>
+          </li>
+          <li><a href="https://red-social-595e4.firebaseapp.com/login" 
+            class="project">Mundo Dulce</a>
+          </li>
+          <li><a href="https://super-recetas.tita1089.now.sh/" 
+            class="project">Súper Recetas</a>
+          </li>
+        </ul>
       </p>
     </section>
     <script src="index.js"></script>

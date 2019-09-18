@@ -38,3 +38,19 @@ title{
     text-align: center;
     font-size: 1rem;
 }
+.bundle{
+    display:block;
+    margin-left:30rem;
+    margin-top: 1rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+.project{
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom:1rem;
+}
+ul{
+    margin-top:1rem;
+}

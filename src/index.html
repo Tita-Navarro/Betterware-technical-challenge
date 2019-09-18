@@ -32,7 +32,19 @@
         2. En JavaScript escriba una función que convierta una fecha ingresada
         como: M/D/YYYY a el formato requerido: YYYYMMDD
       </h3>
-      <p class="answer"></p>
+      <p class="answer">function formatDate(userDate) { <br>
+          // format from M/D/YYYY to YYYYMMDD <br>
+            let array = userDate.split("/"); <br>
+            while(array[0].length < 2) { <br>
+                array[0] = "0" + array[0]; <br>
+            } <br>
+            while(array[1].length < 2) { <br>
+                array[1] = "0" + array[1]; <br>
+            } <br>
+            let arrayAnswer = array[2]+ array[0]+ array[1];<br>
+            return arrayAnswer; <br>
+        } <br>
+        console.log(formatDate("9/18/2019"));</p> <br>
       <h3 class="question">3. Que es un Bundle en Webpack</h3>
       <p class="answer">
         Un bundle sirve para agrupar todos los ficheros de JavaScript en uno
